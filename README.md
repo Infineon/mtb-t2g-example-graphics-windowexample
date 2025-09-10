@@ -14,6 +14,15 @@ The drivers used or available in this code example are listed below.
 - [JPEG decode driver user guide (TRAVEO™ T2G cluster series)](https://www.infineon.com/assets/row/public/documents/10/44/infineon-traveo-t2g-jpeg-decode-user-guide-usermanual-en.pdf?fileId=8ac78c8c8c3de074018c816028cf0ca8)
   - Chapter 2: JPEG decode driver
 
+## Requirements
+
+- [ModusToolbox&trade;](https://www.infineon.com/modustoolbox) v3.5 or later (tested with v3.5)
+- This code example uses [TRAVEO&trade; T2G Virtual Display Tool](https://softwaretools-preview.icp.infineon.com/tools/com.ifx.tb.tool.traveot2gvirtualdisplaytool) to output image. This Tool is available only on Windows.
+
+## Supported toolchains (make variable 'TOOLCHAIN')
+
+- GNU Arm&reg; Embedded Compiler v11.3.1 (`GCC_ARM`) – Default value of `TOOLCHAIN`
+
 ## Device
 
 The device used in this code example (CE) is:
@@ -23,8 +32,6 @@ The device used in this code example (CE) is:
 
 The board used for testing is:
 - TRAVEO™ T2G Cluster 6M Lite Kit ([KIT_T2G_C-2D-6M_LITE](https://www.infineon.com/cms/en/product/evaluation-boards/kit_t2g_c-2d-6m_lite/))
-
-<img src="./images/kit_t2g_c-2d-6m_lite.png" width="500"/>
 
 ## Scope of work
 
@@ -105,12 +112,14 @@ The animated bars use a simple animation system:
 
 **Dynamic Updates**: Only bars that change values trigger surface updates, optimizing performance.
 
-More details can be found in [TRAVEO™ T2G Graphics Driver User Guide](https://www.infineon.com/dgdl/Infineon-TVIIC_Graphics_Driver_User_Guide-UserManual-v01_00-EN.pdf) and [Technical Reference Manual (TRM)](https://www.infineon.com/dgdl/?fileId=5546d4627600a6bc017600bfae720007).
+More details can be found in [TRAVEO™ T2G Graphics Driver User Guide](https://myicp.infineon.com/sites/TRAVEODocumentation/Lists/defaultdoclib/Forms/AllItems.aspx?RootFolder=%2Fsites%2FTRAVEODocumentation%2FLists%2Fdefaultdoclib%2FTraveo%20II%2FTraveo%20II%20Cluster%2FGraphics&FolderCTID=0x01200023F2B2CA20D58647B6BFDE768454209B&View=%7BC8DBE6BD%2D4E7B%2D49A9%2D9267%2D2F926C13CB27%7D) and [Technical Reference Manual (TRM)](https://www.infineon.com/products/microcontroller/32-bit-traveo-t2g-arm-cortex/for-cluster/t2g-cyt4dn#documents).
 
 ## Hardware setup
 
 This CE has been developed for:
 - TRAVEO™ T2G evaluation kit lite ([KIT_T2G_C-2D-6M_LITE](https://www.infineon.com/cms/en/product/evaluation-boards/kit_t2g_c-2d-6m_lite/))
+
+<img src="./images/kit_t2g_c-2d-6m_lite.png" width="500"/>
 
 **Setup for FX3 Output:**
 1. **Power Setup:**
