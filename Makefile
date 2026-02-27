@@ -47,7 +47,7 @@ TARGET=APP_KIT_T2G_C-2D-6M_LITE
 #
 # If APPNAME is edited, ensure to update or regenerate launch
 # configurations for your IDE.
-APPNAME=mtb-windowexample
+APPNAME=pdl_mtb_graphics-windowexample
 
 # Name of toolchain to use. Options include:
 #

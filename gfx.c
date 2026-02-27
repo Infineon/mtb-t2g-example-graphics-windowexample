@@ -1,6 +1,6 @@
 /**********************************************************************************************************************
  * \file gfx.c
- * \copyright Copyright (C) Infineon Technologies AG 2019
+ * \copyright Copyright (C) Infineon Technologies AG 2026
  *
  * Use of this file is subject to the terms of use agreed between (i) you or the company in which ordinary course of
  * business you are acting and (ii) Infineon Technologies AG or its licensees. If and as long as no such terms of use
@@ -55,11 +55,20 @@
 /*********************************************************************************************************************/
 /*------------------------------------------------------Macros-------------------------------------------------------*/
 /*********************************************************************************************************************/
+#if defined(CY_DEVICE_TVIIC2D6M)
 #define DISPLAY_WIDTH           (800)
 #define DISPLAY_HEIGHT          (480)
 
 #define WINDOW_WIDTH            (600)
 #define WINDOW_HEIGHT           (360)
+
+#elif defined (CY_DEVICE_TVIIC2D4M)
+#define DISPLAY_WIDTH           (400)
+#define DISPLAY_HEIGHT          (240)
+
+#define WINDOW_WIDTH            (300)
+#define WINDOW_HEIGHT           (180)
+#endif
 
 #define TASK_INSTR_BUFFER_SIZE  (16 * 1024)
 
@@ -372,7 +381,8 @@ static CYGFX_ERROR initWindowsAndSurface(void)
  */
 static void initRandom(void)
 {
-    srand((unsigned int)time(NULL));
+    /* Replace 0U by true random number to have True Random Number Generator */
+    srand(0U);
 }
 
 /**********************************************************************************************************************
